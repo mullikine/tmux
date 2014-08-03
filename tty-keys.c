@@ -99,6 +99,20 @@ const struct tty_default_key_raw tty_default_raw_keys[] = {
 	{ "\033[c", KEYC_RIGHT|KEYC_SHIFT },
 	{ "\033[d", KEYC_LEFT|KEYC_SHIFT },
 
+	/* rxvt-style function  keys. */
+	{ "\033[11~", KEYC_F1 },
+	{ "\033[12~", KEYC_F2 },
+	{ "\033[13~", KEYC_F3 },
+	{ "\033[14~", KEYC_F4 },
+	{ "\033[15~", KEYC_F5 },
+	{ "\033[17~", KEYC_F6 },
+	{ "\033[18~", KEYC_F7 },
+	{ "\033[19~", KEYC_F8 },
+	{ "\033[20~", KEYC_F9 },
+	{ "\033[21~", KEYC_F10 },
+	{ "\033[23~", KEYC_F11 },
+	{ "\033[24~", KEYC_F12 },
+
 	/* rxvt-style function + modifier keys (C = ^, S = $, C-S = @). */
 	{ "\033[11^", KEYC_F1|KEYC_CTRL },
 	{ "\033[12^", KEYC_F2|KEYC_CTRL },
